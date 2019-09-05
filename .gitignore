@@ -293,3 +293,4 @@ common/temp/**
 **/common/temp/**
 .rush/temp/**
 **/.rush/temp/**
+!.scripts
