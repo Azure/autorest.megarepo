@@ -370,7 +370,7 @@
       "projectFolder": "autorest.remodeler/remodeler",
       "reviewCategory": "production",
       "shouldPublish": true
-    }
+    },
     /* remodeler */
     {
       "packageName": "@autorest/powershell",

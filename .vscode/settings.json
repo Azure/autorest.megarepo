@@ -43,7 +43,8 @@
     "editor.detectIndentation": false
   },
   "files.associations": {
-    "rush.json": "jsonc"
+    "rush.json": "jsonc",
+    "command-line.json": "jsonc"
   },
   "eslint.workingDirectories": [
     {

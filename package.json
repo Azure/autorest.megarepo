@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "private": true,
-  "name": "autorest.megarepo",
+  "name": "@autorest/megarepo",
   "description": "> See readme.md for build instructions",
   "scripts": {
     "prepare": "(pwsh -v || npm --silent run show-error) && pwsh -noprofile ./.scripts/verify-install.ps1",
