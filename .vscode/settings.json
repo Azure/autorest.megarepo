@@ -1,0 +1,122 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/common/temp/**": true,
+    "node_modules/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true,
+    "**/*.js.map": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.d.tsx": {
+      "when": "$(basename).ts"
+    },
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+  "files.associations": {
+    "rush.json": "jsonc"
+  },
+  "eslint.workingDirectories": [
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/async-io",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/autorest-extension-base",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/codegen",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/codegen-csharp",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/codemodel-v3",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/datastore",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/deduplication",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/eventing",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/extension",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/linq",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/oai2-to-oai3",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/object-comparison",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/openapi",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/tasks",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./libraries/uri"
+    }
+  ],
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "typescript",
+      "autoFix": true,
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": false
+    }
+  ],
+}
