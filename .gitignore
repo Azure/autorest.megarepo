@@ -286,3 +286,10 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+**/
+
+common/temp/**
+**/common/temp/**
+.rush/temp/**
+**/.rush/temp/**

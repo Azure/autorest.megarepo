@@ -261,64 +261,122 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
-    // {
-    //   /**
-    //    * The NPM package name of the project (must match package.json)
-    //    */
-    //   "packageName": "my-app",
-    // 
-    //   /**
-    //    * The path to the project folder, relative to the rush.json config file.
-    //    */
-    //   "projectFolder": "apps/my-app",
-    // 
-    //   /**
-    //    * An optional category for usage in the "browser-approved-packages.json"
-    //    * and "nonbrowser-approved-packages.json" files.  The value must be one of the
-    //    * strings from the "reviewCategories" defined above.
-    //    */
-    //   "reviewCategory": "production",
-    // 
-    //   /**
-    //    * A list of local projects that appear as devDependencies for this project, but cannot be
-    //    * locally linked because it would create a cyclic dependency; instead, the last published
-    //    * version will be installed in the Common folder.
-    //    */
-    //   "cyclicDependencyProjects": [
-    //     // "my-toolchain"
-    //   ],
-    // 
-    //   /**
-    //    * If true, then this project will be ignored by the "rush check" command.
-    //    * The default value is false.
-    //    */
-    //   // "skipRushCheck": false,
-    // 
-    //   /**
-    //    * A flag indicating that changes to this project will be published to npm, which affects
-    //    * the Rush change and publish workflows. The default value is false.
-    //    * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
-    //    */
-    //   // "shouldPublish": false,
-    // 
-    //   /**
-    //    * An optional version policy associated with the project.  Version policies are defined
-    //    * in "version-policies.json" file.  See the "rush publish" documentation for more info.
-    //    * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
-    //    */
-    //   // "versionPolicyName": ""
-    // },
-    // 
-    // {
-    //   "packageName": "my-controls",
-    //   "projectFolder": "libraries/my-controls",
-    //   "reviewCategory": "production"
-    // },
-    // 
-    // {
-    //   "packageName": "my-toolchain",
-    //   "projectFolder": "tools/my-toolchain",
-    //   "reviewCategory": "tools"
-    // }
+    {
+      "packageName": "@azure-tools/tasks",
+      "projectFolder": "perks/tasks",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/async-io",
+      "projectFolder": "perks/async-io",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/eventing",
+      "projectFolder": "perks/eventing",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/extension",
+      "projectFolder": "perks/extension",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/datastore",
+      "projectFolder": "perks/datastore",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/linq",
+      "projectFolder": "perks/linq",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/openapi",
+      "projectFolder": "perks/openapi",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/uri",
+      "projectFolder": "perks/uri",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/oai2-to-oai3",
+      "projectFolder": "perks/oai2-to-oai3",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/autorest-extension-base",
+      "projectFolder": "perks/autorest-extension-base",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/codemodel-v3",
+      "projectFolder": "perks/codemodel-v3",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/codegen",
+      "projectFolder": "perks/codegen",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/codegen-csharp",
+      "projectFolder": "perks/codegen-csharp",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/object-comparison",
+      "projectFolder": "perks/object-comparison",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@azure-tools/deduplication",
+      "projectFolder": "perks/deduplication",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    /* autorest */
+    {
+      "packageName": "autorest",
+      "projectFolder": "autorest/autorest",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@autorest/core",
+      "projectFolder": "autorest/core",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    /* remodeler */
+    {
+      "packageName": "@autorest/remodeler",
+      "projectFolder": "autorest.remodeler/remodeler",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    }
+    /* remodeler */
+    {
+      "packageName": "@autorest/powershell",
+      "projectFolder": "autorest.powershell/powershell",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    }
   ]
 }

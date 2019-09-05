@@ -48,63 +48,79 @@
   "eslint.workingDirectories": [
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/async-io",
+      "directory": "./perks/async-io",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/autorest-extension-base",
+      "directory": "./perks/autorest-extension-base",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/codegen",
+      "directory": "./perks/codegen",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/codegen-csharp",
+      "directory": "./perks/codegen-csharp",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/codemodel-v3",
+      "directory": "./perks/codemodel-v3",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/datastore",
+      "directory": "./perks/datastore",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/deduplication",
+      "directory": "./perks/deduplication",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/eventing",
+      "directory": "./perks/eventing",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/extension",
+      "directory": "./perks/extension",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/linq",
+      "directory": "./perks/linq",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/oai2-to-oai3",
+      "directory": "./perks/oai2-to-oai3",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/object-comparison",
+      "directory": "./perks/object-comparison",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/openapi",
+      "directory": "./perks/openapi",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/tasks",
+      "directory": "./perks/tasks",
     },
     {
       "changeProcessCWD": true,
-      "directory": "./libraries/uri"
+      "directory": "./perks/uri"
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./autorest/autorest"
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./autorest/core"
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./autorest.remodeler/remodeler"
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./autorest.powershell/powershell"
     }
   ],
   "eslint.autoFixOnSave": true,

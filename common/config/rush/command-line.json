@@ -4,96 +4,61 @@
  */
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
-
   /**
    * Custom "commands" introduce new verbs for the command-line.  To see the help for these
    * example commands, try "rush --help", "rush my-bulk-command --help", or
    * "rush my-global-command --help".
    */
   "commands": [
-    // {
-    //   /**
-    //    * (Required) Determines the type of custom command.
-    //    * Rush's "bulk" commands are invoked separately for each project.  Rush will look in
-    //    * each project's package.json file for a "scripts" entry whose name matches the
-    //    * command name.  By default, the command will run for every project in the repo,
-    //    * according to the dependency graph (similar to how "rush build" works).
-    //    * The set of projects can be restricted e.g. using the "--to" or "--from" parameters.
-    //    */
-    //   "commandKind": "bulk",
-    // 
-    //   /**
-    //    * (Required) The name that will be typed as part of the command line.  This is also the name
-    //    * of the "scripts" hook in the project's package.json file.
-    //    * The name should be comprised of lower case words separated by hyphens or colons. The name should include an
-    //    * English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs"). A group of related commands
-    //    * can be prefixed with a colon (e.g. "docs:generate", "docs:deploy", "docs:serve", etc).
-    //    */
-    //   "name": "my-bulk-command",
-    // 
-    //   /**
-    //    * (Required) A short summary of the custom command to be shown when printing command line
-    //    * help, e.g. "rush --help".
-    //    */
-    //   "summary": "Example bulk custom command",
-    // 
-    //   /**
-    //    * A detailed description of the command to be shown when printing command line
-    //    * help (e.g. "rush --help my-command").
-    //    * If omitted, the "summary" text will be shown instead.
-    //    *
-    //    * Whenever you introduce commands/parameters, taking a little time to write meaningful
-    //    * documentation can make a big difference for the developer experience in your repo.
-    //    */
-    //   "description": "This is an example custom command that runs separately for each project",
-    // 
-    //   /**
-    //    * By default, Rush operations acquire a lock file which prevents multiple commands from executing simultaneously
-    //    * in the same repo folder.  (For example, it would be a mistake to run "rush install" and "rush build" at the
-    //    * same time.)  If your command makes sense to run concurrently with other operations,
-    //    * set "safeForSimultaneousRushProcesses" to true to disable this protection.
-    //    *
-    //    * In particular, this is needed for custom scripts that invoke other Rush commands.
-    //    */
-    //   "safeForSimultaneousRushProcesses": false,
-    // 
-    //   /**
-    //    * (Required) If true, then this command is safe to be run in parallel, i.e. executed
-    //    * simultaneously for multiple projects.  Similar to "rush build", regardless of parallelism
-    //    * projects will not start processing until their dependencies have completed processing.
-    //    */
-    //   "enableParallelism": false,
-    // 
-    //   /**
-    //    * Normally Rush requires that each project's package.json has a "scripts" entry matching
-    //    * the custom command name.  To disable this check, set "ignoreMissingScript" to true;
-    //    * projects with a missing definition will be skipped.
-    //    */
-    //   "ignoreMissingScript": false
-    // },
-    // 
-    // {
-    //   /**
-    //    * (Required) Determines the type of custom command.
-    //    * Rush's "global" commands are invoked once for the entire repo.
-    //    */
-    //   "commandKind": "global",
-    // 
-    //   "name": "my-global-command",
-    //   "summary": "Example global custom command",
-    //   "description": "This is an example custom command that runs once for the entire repo",
-    // 
-    //   "safeForSimultaneousRushProcesses": false,
-    // 
-    //   /**
-    //    * A script that will be invoked using the OS shell. The working directory will be the folder
-    //    * that contains rush.json.  If custom parameters are associated with this command, their
-    //    * values will be appended to the end of this string.
-    //    */
-    //   "shellCommand": "node common/scripts/my-global-command.js"
-    // }
+    {
+      "commandKind": "bulk",
+      "name": "set-version",
+      "summary": "set the version in the package.json files",
+      "enableParallelism": true
+    },
+    {
+      "commandKind": "bulk",
+      "name": "reset-version",
+      "summary": "reset the version in the package.json files to .0",
+      "enableParallelism": true
+    },
+    {
+      "commandKind": "global",
+      "name": "sync-versions",
+      "summary": "sync versions of sibling projects",
+      "shellCommand": "node common/scripts/sync-versions.js"
+    },
+    {
+      "commandKind": "global",
+      "name": "watch",
+      "summary": "run npm watch on all projects",
+      "shellCommand": "node common/scripts/watch.js"
+    },
+    {
+      "commandKind": "global",
+      "name": "clean",
+      "summary": "run npm clean on all projects",
+      "shellCommand": "node common/scripts/clean.js"
+    },
+    {
+      "commandKind": "global",
+      "name": "test",
+      "summary": "run all npm test",
+      "shellCommand": "node common/scripts/test.js"
+    },
+    {
+      "commandKind": "global",
+      "name": "fix",
+      "summary": "run all npm fix",
+      "shellCommand": "node common/scripts/fix.js"
+    },
+    {
+      "commandKind": "global",
+      "name": "lint",
+      "summary": "run all npm eslint",
+      "shellCommand": "node common/scripts/eslint.js"
+    }
   ],
-
   /**
    * Custom "parameters" introduce new parameters for specified Rush command-line commands.
    * For example, you might define a "--production" parameter for the "rush build" command.
