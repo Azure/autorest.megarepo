@@ -22,14 +22,14 @@ function versionToInt(ver) {
   return n;
 }
 
-const rush = read(`${__dirname}/../../rush.json`);
+const rush = read(`${__dirname}/../rush.json`);
 const pjs = {};
 
 // load all the projects
 for (const each of rush.projects) {
   const packageName = each.packageName;
   const projectFolder = each.projectFolder;
-  pjs[packageName] = require(`${__dirname}/../../${projectFolder}/package.json`);
+  pjs[packageName] = require(`${__dirname}/../${projectFolder}/package.json`);
 }
 
 // verify that peer dependencies are the same version as they are building.
@@ -96,7 +96,7 @@ for (const pj of Object.getOwnPropertyNames(pjs)) {
 for (const each of rush.projects) {
   const packageName = each.packageName;
   const projectFolder = each.projectFolder;
-  fs.writeFileSync(`${__dirname}/../../${projectFolder}/package.json`, JSON.stringify(pjs[packageName], null, 2));
+  fs.writeFileSync(`${__dirname}/../${projectFolder}/package.json`, JSON.stringify(pjs[packageName], null, 2));
 }
 
 console.log("project.json files updated");
