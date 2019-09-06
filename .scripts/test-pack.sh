@@ -54,5 +54,7 @@ unlink $REPO_FOLDER/autorest/common/temp
 unlink $REPO_FOLDER/autorest.powershell/common/temp
 unlink $REPO_FOLDER/autorest.remodeler/common/temp
 
+# reset patch version numbers back to 0
+rush reset-versions
 
 popd
