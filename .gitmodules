@@ -1,11 +1,11 @@
 [submodule "perks"]
 	path = perks
 	url = https://github.com/azure/perks
-	branch = move-to-azure
+	branch = master
 [submodule "autorest.powershell"]
 	path = autorest.powershell
 	url = https://github.com/azure/autorest.powershell
-	branch = reorg
+	branch = master
 [submodule "autorest"]
 	path = autorest
 	url = https://github.com/azure/autorest

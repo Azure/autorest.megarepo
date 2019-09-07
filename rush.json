@@ -351,9 +351,15 @@
       "reviewCategory": "production",
       "shouldPublish": true
     },
-    /* autorest */
+    /* autorest 
     {
       "packageName": "autorest",
+      "projectFolder": "autorest/autorest",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    }, */
+    {
+      "packageName": "@autorest/autorest",
       "projectFolder": "autorest/autorest",
       "reviewCategory": "production",
       "shouldPublish": true
@@ -371,7 +377,7 @@
       "reviewCategory": "production",
       "shouldPublish": true
     },
-    /* remodeler */
+    /* powershell */
     {
       "packageName": "@autorest/powershell",
       "projectFolder": "autorest.powershell/powershell",
