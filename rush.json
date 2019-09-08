@@ -351,19 +351,19 @@
       "reviewCategory": "production",
       "shouldPublish": true
     },
-    /* autorest 
     {
       "packageName": "autorest",
       "projectFolder": "autorest/autorest",
       "reviewCategory": "production",
       "shouldPublish": true
-    }, */
+    },
+    /* autorest 
     {
       "packageName": "@autorest/autorest",
       "projectFolder": "autorest/autorest",
       "reviewCategory": "production",
       "shouldPublish": true
-    },
+    }, */
     {
       "packageName": "@autorest/core",
       "projectFolder": "autorest/core",
