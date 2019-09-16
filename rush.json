@@ -328,6 +328,12 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@azure-tools/codemodel",
+      "projectFolder": "perks/codemodel",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@azure-tools/codegen",
       "projectFolder": "perks/codegen",
       "reviewCategory": "production",
@@ -374,6 +380,12 @@
     {
       "packageName": "@autorest/remodeler",
       "projectFolder": "autorest.remodeler/remodeler",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@autorest/modelerfour",
+      "projectFolder": "autorest.remodeler/modelerfour",
       "reviewCategory": "production",
       "shouldPublish": true
     },

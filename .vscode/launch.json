@@ -18,10 +18,10 @@
       "type": "node",
       "protocol": "inspector",
       "request": "launch",
-      "name": "run core test [modifiers]",
-      "program": "${workspaceRoot}/autorest/core/node_modules/mocha/bin/_mocha",
+      "name": "run test",
+      "program": "${workspaceRoot}/autorest.remodeler/modelerfour/node_modules/mocha/bin/_mocha",
       "args": [
-        "dist/test/component-cleaner.js",
+        "dist/test",
         // "-g",
         // "RemoveModel",
         "--timeout=2000000"
@@ -30,7 +30,7 @@
       "skipFiles": [
         "<node_internals>/**/*.js"
       ],
-      "cwd": "${workspaceRoot}/autorest/core"
+      "cwd": "${workspaceRoot}/autorest.remodeler/modelerfour"
     },
   ]
 }

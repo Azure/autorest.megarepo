@@ -4,6 +4,7 @@
   "files.exclude": {
     "**/common/temp/**": true,
     "node_modules/**": true,
+    "**/generated/**": true,
     "**/dist/**": true,
     "**/node_modules/**": true,
     "**/*.js.map": true,
@@ -29,6 +30,9 @@
     "editor.formatOnPaste": true,
     "editor.tabSize": 2,
     "editor.detectIndentation": false
+  },
+  "[csharp]": {
+    "editor.tabSize": 4,
   },
   "[json]": {
     "editor.formatOnSave": true,
@@ -66,6 +70,10 @@
     {
       "changeProcessCWD": true,
       "directory": "./perks/codemodel-v3",
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./perks/codemodel",
     },
     {
       "changeProcessCWD": true,
