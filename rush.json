@@ -385,7 +385,7 @@
     },
     {
       "packageName": "@autorest/modelerfour",
-      "projectFolder": "autorest.remodeler/modelerfour",
+      "projectFolder": "autorest.modelerfour/modelerfour",
       "reviewCategory": "production",
       "shouldPublish": true
     },

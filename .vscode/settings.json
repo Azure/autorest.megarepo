@@ -6,6 +6,8 @@
     "node_modules/**": true,
     "**/generated/**": true,
     "**/dist/**": true,
+    "**/obj/**": true,
+    "**/bin/**": true,
     "**/node_modules/**": true,
     "**/*.js.map": true,
     "**/*.js": {
@@ -126,6 +128,10 @@
     {
       "changeProcessCWD": true,
       "directory": "./autorest.remodeler/remodeler"
+    },
+    {
+      "changeProcessCWD": true,
+      "directory": "./autorest.modelerfour/modelerfour"
     },
     {
       "changeProcessCWD": true,
