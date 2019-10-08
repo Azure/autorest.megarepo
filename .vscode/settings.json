@@ -4,7 +4,7 @@
   "files.exclude": {
     "**/common/temp/**": true,
     "node_modules/**": true,
-    "**/generated/**": true,
+    "**/generated/**": false,
     "**/dist/**": true,
     "**/obj/**": true,
     "**/bin/**": true,
@@ -150,4 +150,5 @@
       "autoFix": false
     }
   ],
+  "git.ignoreLimitWarning": true,
 }
