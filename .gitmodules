@@ -14,6 +14,6 @@
 	path = autorest.remodeler
 	url = https://github.com/azure/autorest.remodeler
 	branch = master
-[submodule "autorest.modelerfour"]
-	path = autorest.modelerfour
-	url = https://github.com/azure/autorest.modelerfour
+[submodule "autorest.sputnik"]
+	path = autorest.sputnik
+	url = https://github.com/fearthecowboy/autorest.sputnik
