@@ -3,7 +3,7 @@
 	url = https://github.com/azure/perks
 	branch = master
 [submodule "autorest.powershell"]
-	path = autorest.powershell
+	path = powershell
 	url = https://github.com/azure/autorest.powershell
 	branch = master
 [submodule "autorest"]
@@ -11,14 +11,14 @@
 	url = https://github.com/azure/autorest
 	branch = v3
 [submodule "autorest.remodeler"]
-	path = autorest.remodeler
+	path = remodeler
 	url = https://github.com/azure/autorest.remodeler
 	branch = master
 [submodule "autorest.sputnik"]
-	path = autorest.sputnik
+	path = sputnik
 	url = https://github.com/fearthecowboy/autorest.sputnik
 	branch = master
 [submodule "autorest.modelerfour"]
-	path = autorest.modelerfour
+	path = modelerfour
 	url = https://github.com/azure/autorest.modelerfour
 	branch = master
