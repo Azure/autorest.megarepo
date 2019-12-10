@@ -9,7 +9,7 @@
 [submodule "autorest"]
 	path = autorest
 	url = https://github.com/azure/autorest
-	branch = oai3-reorg
+	branch = v3
 [submodule "autorest.remodeler"]
 	path = autorest.remodeler
 	url = https://github.com/azure/autorest.remodeler
@@ -17,3 +17,8 @@
 [submodule "autorest.sputnik"]
 	path = autorest.sputnik
 	url = https://github.com/fearthecowboy/autorest.sputnik
+	branch = master
+[submodule "autorest.modelerfour"]
+	path = autorest.modelerfour
+	url = https://github.com/azure/autorest.modelerfour
+	branch = master
