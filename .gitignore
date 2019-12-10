@@ -288,6 +288,7 @@ __pycache__/
 *.xsd.cs
 
 **/
+!autorest.*/
 
 common/temp/**
 **/common/temp/**
