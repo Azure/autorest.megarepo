@@ -379,27 +379,27 @@
     /* remodeler */
     {
       "packageName": "@autorest/remodeler",
-      "projectFolder": "autorest.remodeler/remodeler",
+      "projectFolder": "remodeler/remodeler",
       "reviewCategory": "production",
       "shouldPublish": true
     },
     {
       "packageName": "@autorest/modelerfour",
-      "projectFolder": "autorest.modelerfour/modelerfour",
+      "projectFolder": "modelerfour/modelerfour",
       "reviewCategory": "production",
       "shouldPublish": true
     },
     /* powershell */
     {
       "packageName": "@autorest/powershell",
-      "projectFolder": "autorest.powershell/powershell",
+      "projectFolder": "powershell/powershell",
       "reviewCategory": "production",
       "shouldPublish": true
     },
     /* sputnik */
     {
       "packageName": "@autorest/sputnik",
-      "projectFolder": "autorest.sputnik/sputnik",
+      "projectFolder": "sputnik/sputnik",
       "reviewCategory": "development",
       "shouldPublish": true
     }
