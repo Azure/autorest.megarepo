@@ -287,7 +287,7 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
-**/
+#**/
 !autorest.*/
 
 common/temp/**

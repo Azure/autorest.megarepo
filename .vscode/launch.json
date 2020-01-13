@@ -19,7 +19,7 @@
       "protocol": "inspector",
       "request": "launch",
       "name": "run test",
-      "program": "${workspaceRoot}/autorest.modelerfour/modelerfour/node_modules/mocha/bin/_mocha",
+      "program": "${workspaceRoot}/modelerfour/modelerfour/node_modules/mocha/bin/_mocha",
       "args": [
         "dist/test",
         // "-g",
@@ -30,7 +30,7 @@
       "skipFiles": [
         "<node_internals>/**/*.js"
       ],
-      "cwd": "${workspaceRoot}/autorest.modelerfour/modelerfour"
+      "cwd": "${workspaceRoot}/modelerfour/modelerfour"
     },
   ]
 }

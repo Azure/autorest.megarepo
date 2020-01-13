@@ -22,3 +22,6 @@
 	path = modelerfour
 	url = https://github.com/azure/autorest.modelerfour
 	branch = master
+[submodule "testserver"]
+	path = testserver
+	url = https://github.com/Azure/autorest.testserver
